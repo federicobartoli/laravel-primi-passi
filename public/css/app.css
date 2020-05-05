@@ -10,6 +10,12 @@
 
 /* common */
 
+.clearfix::after {
+  clear: both;
+  display: block;
+  content: "";
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -20,6 +26,10 @@ a {
 }
 
 /* header */
+
+.hamburger {
+  display: none;
+}
 
 .lamolisana-header {
   display: flex;
@@ -56,6 +66,12 @@ a {
 
 /* main */
 
+.cards-list {
+  background-image: url("/../img/sfondo.jpg");
+  background-position: center;
+  padding: 30px 0 30px;
+}
+
 .cards-list section {
   display: flex;
   flex-direction: column;
@@ -67,6 +83,7 @@ a {
 }
 
 .cards-list section .titolo h2 {
+  text-transform: uppercase;
   margin-left: 20px;
   align-self: flex-start;
 }
@@ -114,4 +131,92 @@ a {
 }
 
 /* footer */
+
+footer .footer {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 90px;
+}
+
+footer .footer .titoli {
+  text-transform: uppercase;
+  font-size: 1.5em;
+  padding-bottom: 5px;
+}
+
+footer .footer .links {
+  padding-bottom: 10px;
+}
+
+footer .footer .links a {
+  display: block;
+  padding-bottom: 2.5px;
+}
+
+footer .footer .colonna1 {
+  float: left;
+  width: calc(100% / 3);
+  padding: 40px;
+}
+
+footer .footer .colonna2 {
+  float: left;
+  width: calc(100% / 3);
+  padding: 40px;
+}
+
+footer .footer .colonna3 {
+  float: left;
+  width: calc(100% / 3);
+  padding: 40px;
+}
+
+footer .montagne-footer {
+  height: 150px;
+  background-image: url("https://www.lamolisana.it/wp-content/uploads/2017/10/footer-montagne-bottom.jpg");
+  background-position: center;
+}
+
+@media only screen and (max-width: 992px) {
+  body {
+    font-size: 12px;
+  }
+
+  .hamburger {
+    cursor: pointer;
+    display: block;
+    font-size: 20px;
+    color: black;
+  }
+
+  nav {
+    display: none;
+    cursor: pointer;
+  }
+
+  .cards-list section .cards .card {
+    flex-basis: calc((100% / 2) - 40px);
+  }
+
+  footer .footer .colonna1 {
+    padding: 10px;
+    width: 100%;
+  }
+
+  footer .footer .colonna2 {
+    padding: 10px;
+    width: 100%;
+  }
+
+  footer .footer .colonna3 {
+    padding: 10px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .cards-list section .cards .card {
+    flex-basis: calc(100% - 40px);
+  }
+}
 

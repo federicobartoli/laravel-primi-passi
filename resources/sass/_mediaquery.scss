@@ -1,0 +1,54 @@
+
+
+@media only screen and (max-width: 992px) {
+     body {
+          font-size: 12px;
+     }
+     .hamburger {
+          cursor: pointer;
+          display: block;
+          font-size: 20px;
+          color: black;
+     }
+     nav {
+          display: none;
+          cursor: pointer;
+     }
+     .cards-list {
+          section {
+               .cards {
+                    .card {
+                         flex-basis: calc((100% / 2) - 40px);
+                    }
+               }
+          }
+     }
+     footer {
+          .footer {
+               .colonna1{
+                    padding: 10px;
+                    width: 100%;
+               }
+               .colonna2{
+                    padding: 10px;
+                    width: 100%;
+               }
+               .colonna3{
+                    padding: 10px;
+                    width: 100%;
+               }
+          }
+     }
+}
+
+@media only screen and (max-width: 576px) {
+     .cards-list {
+          section {
+               .cards {
+                    .card {
+                         flex-basis: calc(100% - 40px);
+                    }
+               }
+          }
+     }
+}

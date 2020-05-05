@@ -11,5 +11,8 @@
 
                </ul>
           </nav>
+          <div class="hamburger">
+               <i class="fas fa-bars"></i>
+          </div>
      </div>
 </header>
