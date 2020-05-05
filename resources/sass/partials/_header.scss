@@ -1,0 +1,30 @@
+.lamolisana-header {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     width: 100vw;
+     height: 300px;
+     ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          li {
+               display: inline;
+               a {
+                    text-decoration: none;
+                    color: black;
+                    padding: 14px 16px;
+               }
+               &:hover {
+                 background-color: rgba(210, 225, 230, 0.4);
+
+               }
+
+          }
+          .active {
+               background-color: rgba(210, 225, 230, 0.4);
+          }
+     }
+
+}

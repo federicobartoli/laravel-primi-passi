@@ -1,0 +1,117 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat&display=swap);/* reset */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* mixin */
+
+/* common */
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* header */
+
+.lamolisana-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 300px;
+}
+
+.lamolisana-header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lamolisana-header ul li {
+  display: inline;
+}
+
+.lamolisana-header ul li a {
+  text-decoration: none;
+  color: black;
+  padding: 14px 16px;
+}
+
+.lamolisana-header ul li:hover {
+  background-color: rgba(210, 225, 230, 0.4);
+}
+
+.lamolisana-header ul .active {
+  background-color: rgba(210, 225, 230, 0.4);
+}
+
+/* main */
+
+.cards-list section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards-list section .titolo {
+  width: 80%;
+}
+
+.cards-list section .titolo h2 {
+  margin-left: 20px;
+  align-self: flex-start;
+}
+
+.cards-list section .cards {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cards-list section .cards .card {
+  flex-basis: calc((100% / 3) - 40px);
+  position: relative;
+  margin: 20px;
+  border-radius: 2%;
+  overflow: hidden;
+}
+
+.cards-list section .cards .card:hover .hover {
+  opacity: 1;
+}
+
+.cards-list section .cards .card:hover img {
+  transform: scale(1.4);
+}
+
+.cards-list section .cards .card img {
+  transition: all 0.8s ease;
+  display: block;
+  width: 100%;
+}
+
+.cards-list section .cards .card .hover {
+  transition: all 0.8s ease;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+}
+
+.cards-list section .cards .card .hover h3 {
+  padding-bottom: 10px;
+}
+
+/* footer */
+

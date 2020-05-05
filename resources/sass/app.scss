@@ -1,0 +1,14 @@
+@import "_variables";
+/* reset */
+@import "_reset";
+/* mixin */
+@import "_mixin";
+/* common */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import "_common";
+/* header */
+@import "partials/_header";
+/* main */
+@import "partials/_main";
+/* footer */
+@import "partials/_footer";
