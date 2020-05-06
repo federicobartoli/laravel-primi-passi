@@ -67,7 +67,7 @@ a {
 /* main */
 
 .cards-list {
-  background-image: url("/../img/sfondo.jpg");
+  background-image: url(/images/sfondo.jpg?51603a9e23b48efd5d0a96217435b1c4);
   background-position: center;
   padding: 30px 0 30px;
 }

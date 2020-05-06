@@ -20,3 +20,7 @@ Route::get('/', function () {
 Route::get('/prodotti', function () {
     return view('index');
 })->name('prodotti');
+// admin
+Route::get('admin/prodotti', function () {
+    return view('admin.products');
+})->name('admin.prodotti');

@@ -5,8 +5,8 @@
           </div>
           <nav>
                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li class="active"><a href="{{route('prodotti')}}">Prodotti</a></li>
+                    <li class=" {{( url()->current() == route('home') ) ? 'active' : ''}} "><a href="{{route('home')}}">Home</a></li>
+                    <li class=" {{( url()->current() == route('prodotti') ) ? 'active' : ''}} "><a href="{{route('prodotti')}}">Prodotti</a></li>
                     <li><a href="#">News</a></li>
 
                </ul>
