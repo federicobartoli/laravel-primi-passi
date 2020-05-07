@@ -18,8 +18,12 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/prodotti', function () {
-    return view('index');
+    return view('prodotti');
 })->name('prodotti');
+
+Route::get('/prodotti/{oggetto}', function ($oggetto) {
+    return view('prodotto' ,compact('oggetto'));
+})->name('prodotti.show');
 // admin
 Route::get('admin/prodotti', function () {
     return view('admin.products');

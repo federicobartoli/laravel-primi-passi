@@ -58,3 +58,30 @@
           }
      }
 }
+
+
+.container-prodotto {
+     background-color: #b9dae5;
+     width: 100%;
+     position: relative;
+     img {
+          width: 100%;
+          z-index: -1;
+     }
+     text-align: center;
+     .titolo-prodotto {
+          h1 {
+               padding: 50px;
+          }
+     }
+     article {
+          display: flex;
+          justify-content: center;
+          p {
+               width: 80%;
+               text-align: left;
+               padding-bottom: 50px;
+               color: $font_blue;
+          }
+     }
+}
